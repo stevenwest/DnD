@@ -1,4 +1,4 @@
-var monsterAC = 12
+var monsterAC = process.argv[4];
 var abilityModifier = process.argv[2];
 var proficiencyModifier = process.argv[3];
 
