@@ -1,6 +1,10 @@
-var monsterAC = process.argv[4];
-var abilityModifier = process.argv[2];
-var proficiencyModifier = process.argv[3];
+var url = require ('url');
+var http = require ('http');
+var q = url.parse(req.url, true).query;
+
+var monsterAC = process.argv[2];
+var abilityModifier = q.abilityModifier;
+var proficiencyModifier = q.proficiencyModifier;
 
 var attackRoll = function(dieSize){
   var roll = Math.ceil(dieSize*Math.random());
@@ -24,3 +28,6 @@ var showResult = function() {
   };
 
 var firstDie = attackRoll(20);
+
+
+document.getElementById("value").innerHTML = roll(click);

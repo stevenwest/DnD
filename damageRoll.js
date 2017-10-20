@@ -1,4 +1,4 @@
-var abilityModifier = process.argv[2]
+var abilityModifier = q.abilityModifier;
 
 var dieRoll = function (dieSize) {
   console.log("Rolling the die!");
