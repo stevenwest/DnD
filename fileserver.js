@@ -14,4 +14,9 @@ http.createServer(function(req, res) {
   res.write(data);
   return res.end();
   });
+  var q = url.parse(req.url, true).query;
+  var abilityModifier = q.abilityModifier;
+  var proficiencyModifier= q.proficiencyModifier;
+  exports.abilityModifier= abilityModifier;
+  exports.proficiencyModifier= proficiencyModifier
 }).listen(8080);
