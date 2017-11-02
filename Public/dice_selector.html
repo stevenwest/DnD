@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../lib/damageRoll.js">
+  </script>
+  <script src="../lib/attackDice.js">
+  </script>
+<!--<script>
+  function attackRoll(dieSize) {
+    var roll = Math.ceil(dieSize * Math.random());
+    document.getElementById("value").innerHTML = roll;
+  };
+  </script>
+  <script>
+  function damageRoll(dieSize) {
+    var roll = Math.ceil(dieSize * Math.random());
+    document.getElementById("value").innerHTML = roll;
+  };
+</script> -->
+<title>Dice Selector</title>
+</head>
+<body>
+<h1>Please Select your dice!</h1>
+  <button onclick= "attackRoll(20);" type="button">D20</button>
+  <button onclick="dieRoll(4);" type="button">D4</button>
+  <button onclick= "dieRoll(6);"  type="button">D6</button>
+  <button onclick= "dieRoll(8);"  type="button">D8</button>
+  <button onclick= "dieRoll(10);"  type="button">D10</button>
+  <button onclick= "dieRoll(12);"  type="button">D12</button>
+  <button onclick = "diceRoll(6);"  type ="button">2D6</button>
+</form>
+
+<p id="value"></p>
+</body>
+</html>
